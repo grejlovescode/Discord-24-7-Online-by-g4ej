@@ -4,20 +4,15 @@
   "description": "A 24/7 Discord self-bot that keeps your main account online",
   "main": "selfbot.js",
   "scripts": {
-    "start": "node selfbot.js",
-    "dev": "nodemon selfbot.js"
+    "start": "node selfbot.js"
   },
-  "keywords": ["discord", "selfbot", "247", "online"],
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
     "discord.js-selfbot-v13": "^2.15.0",
     "dotenv": "^16.3.1"
   },
-  "devDependencies": {
-    "nodemon": "^3.0.2"
-  },
-  "engines": {
+    "engines": {
     "node": ">=16.0.0"
   }
 }
