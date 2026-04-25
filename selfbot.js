@@ -1,4 +1,4 @@
-const { Client, GatewayIntentBits, ActivityType } = require('discord.js-selfbot-v13');
+const { Client } = require('discord.js-selfbot-v13');
 require('dotenv').config();
 
 // WARNING: This code violates Discord's Terms of Service
@@ -10,13 +10,7 @@ console.log('WARNING: Your account could be permanently banned!');
 console.log('WARNING: Use at your own risk!');
 
 const client = new Client({
-    checkUpdate: false,
-    intents: [
-        GatewayIntentBits.Guilds,
-        GatewayIntentBits.GuildMessages,
-        GatewayIntentBits.DirectMessages,
-        GatewayIntentBits.MessageContent
-    ]
+    checkUpdate: false
 });
 
 // Self-bot configuration
@@ -25,7 +19,7 @@ const config = {
     status: 'online',
     activity: {
         name: 'Online 24/7',
-        type: ActivityType.Playing
+        type: 0 // PLAYING
     },
     reconnectInterval: 5000,
     heartbeatInterval: 30000
