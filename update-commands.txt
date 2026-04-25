@@ -1,6 +1,0 @@
-# Run these commands to update your GitHub repository:
-
-git status
-git add .
-git commit -m "Update: Complete Discord 24/7 Self-Bot with emoji removal"
-git push origin main
